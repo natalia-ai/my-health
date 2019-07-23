@@ -1,0 +1,64 @@
+$breakpoints: (
+  "mobile":                   (max-width: 356px),
+  "mobile-":                   (max-width: 370px),
+  "mobile-l":                 (max-width: 400px),
+  "medium-xs":                (max-width: 430px),
+  "medium-s":                 (max-width: 560px),
+  "medium":                   (max-width: 800px),
+  "large-xs":                 (max-width: 890px),
+  "large-s":                  (max-width: 1060px),
+  "large":                    (max-width: 1400px)
+);
+
+
+$color-white: #fff;
+$color-waikawa-gray: #60759d;
+$color-azure:#39649d;
+$color-san-juan: #31496B;
+$color-kashmir-blue: #4f699b;
+$color-steel-blue: #5489c3;
+$color-curious-blue: #23B3E2;
+$color-java: #16afe0;
+$color-cadet-blue: #a8b2bf;
+$color-catskill-white: #e3e7f2;
+$color-razzmatazz: #e70067;
+$color-lipstick: #c9005a;
+$color-titan-white: #fafaff;
+$color-white-lilac: #FAFBFD;
+$color-sugar-cane: #fdfffc;
+$color-alabaster: #f8f8f8;
+$color-zircon: #f0f5ff;
+
+
+$pallete-accent-text: $color-white;
+$pallete-body-text: $color-waikawa-gray;
+$pallete-accessory-text: $color-san-juan;
+$pallete-decor-text: $color-curious-blue;
+$pallete-input-border: $color-kashmir-blue;
+$pallete-input-text: $color-cadet-blue;
+$pallete-copyright-text: $color-catskill-white;
+$pallete-menu-text: $color-sugar-cane;
+$pallete-button-text: $color-zircon;
+$pallete-accent: $color-razzmatazz;
+$pallete-accent-hover: $color-lipstick;
+
+$pallete-footer: $color-azure;
+$pallete-header: $color-alabaster;
+
+$pallete-marker: $color-java;
+$pallete-background-primary: $color-titan-white;
+$pallete-background-secondary: $color-white-lilac;
+$pallete-background-decor: $color-steel-blue;
+
+
+$font-size: 16px;
+$font-size--decor: 3.75em;
+$font-size--title: 2.25em;
+$font-size--subtitle: 1.5em;
+$font-size--subtitle-2: 1.25em;
+$font-size--text-small: 0.875em;
+
+
+$font-cera-thin:               "Cera Round Pro Thin", "Tahoma", sans-serif;
+$font-cera-regular:                "Cera Round Pro Regular", "Tahoma", sans-serif;
+$font-geometria:                      "Geometria Medium", "Arial", sans-serif;

@@ -1,0 +1,119 @@
+.health-diary {
+    position: relative;
+    &::before {
+        content: "";
+        @include absolute-content;
+        top: -3%;
+        height: 118%;
+        background: url(../img/background-1.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        z-index: -1;
+        @include respond-to("large") {
+            left: 1%;
+            top: -5%;
+            height: 138%;
+        }
+        @include respond-to("large-xs") {
+            left: -7.8%;
+            top: -10%;
+            height: 200%;
+        }
+        @include respond-to("medium-s") {
+            left: 0.8%;
+            top: -10%;
+        }
+        @include respond-to("medium-xs") {
+            left: 31%;
+        }
+    }
+    &__blocks {
+        display: flex;
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    &__left-block {
+        display: flex;
+        justify-content: flex-end;
+        width: 45%;
+        max-width: 780px;
+        margin: 0 auto;
+        & img {
+            margin: 145px 0 0 auto;
+        }
+        @include respond-to("medium-s") {
+            display: none;
+        }
+    }
+    &__right-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto 0 0;
+        @include respond-to("medium-s") {
+            width: 98%;
+            margin: 0 auto;
+        }
+    }
+    &__description {
+        margin: 90px auto 0 0;
+        @include respond-to("medium-s") {
+            width: 98%;
+            margin: 90px auto 0 20px;
+        }
+    }
+    &__title {
+        margin: 0 auto 25px -25px;
+        letter-spacing: 0.025em;
+        @include respond-to("medium-s") {
+            margin: 0;
+        }
+        @include respond-to("medium-xs") {
+            width: 98%;
+            margin: 0 auto 0 -10px;
+            text-align: center;
+        }
+    }
+    &__text,
+    &__list li {
+        letter-spacing: .04em;
+    }
+    &__text {
+        margin: 5px auto 20px -20px;
+        @include respond-to("medium-s") {
+            margin: 15px auto 20px;
+        }
+    }
+    &__list li {
+        position: relative;
+        width: 65%;
+        margin: 0 auto 12px -5px;
+        line-height: 1.65em;
+        &::before {
+            @include marker;
+        }
+        @include respond-to("medium-s") {
+            width: 95%;
+            margin: 0;
+        }
+    }
+    &__button {
+        width: 200px;
+        margin: 35px auto 0 -20px;
+        color: $pallete-menu-text;
+        background-color: $pallete-accent;
+        transition: 0.3s;
+        @include button-hover;
+        @include respond-to("medium-s") {
+            margin: 50px auto 0 25vw;
+        }
+        @include respond-to("medium-xs") {
+            margin: 50px auto 0 18vw;
+        }
+        @include respond-to("mobile-l") {
+            margin: 50px auto 0 12vw;
+        }
+    }
+}

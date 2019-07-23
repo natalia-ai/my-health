@@ -1,0 +1,79 @@
+.to-specialists {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    &::before {
+        @include absolute-content;
+        height: 100%;
+        background-color: #fafbfd;
+        background-image: linear-gradient(180deg, #282b64 0, #0e72b7);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .04;
+    }
+    &__image {
+        position: relative;
+        top: -82px;
+        left: 0;
+        width: 50%;
+        max-width: 905px;
+        margin: 0;
+        @include respond-to("medium-s") {
+            width: 90%;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0;
+        @include respond-to("large-xs") {
+            width: 90%;
+            position: relative;
+            top: -200px;
+        }
+        @include respond-to("medium-s") {
+            top: -50px;
+        }
+    }
+    &__title {
+        width: 50%;
+        margin: 85px auto 35px 30px;
+        letter-spacing: .045em;
+        @include respond-to("large-xs") {
+            width: 90%;
+            margin: 0 10px 170px auto;
+            text-align: right;
+        }
+        @include respond-to("medium-s") {
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 1020px;
+        margin: 0 auto 0 0;
+        @include respond-to("large-xs") {
+            width: 98%;
+            margin: 0 auto 0 -15px;
+        }
+    }
+    &__item {
+        position: relative;
+        width: 78%;
+        line-height: 1.6em;
+        margin: 0 auto 15px 50px;
+        letter-spacing: .04em;
+        &::before {
+            @include marker;
+        }
+        @include respond-to("large-xs") {
+            width: 98%;
+        }
+    }
+}

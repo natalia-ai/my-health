@@ -1,0 +1,111 @@
+.opportunities {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 190px;
+    &__title {
+        width: 90%;
+        margin: 0 auto 78px;
+        color: $pallete-accessory-text;
+        text-align: center;
+        letter-spacing: .04em;
+    }
+    &__list {
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        width: 40%;
+        max-width: 1020px;
+        margin: 0 0 0 auto;
+    }
+    &__item {
+        position: relative;
+        width: 78%;
+        line-height: 1.5em;
+        margin: 0 0 0 auto;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: -110px;
+            width: 123px;
+            height: 123px;
+            border: 1px solid $pallete-marker;
+            border-right-color: transparent;
+            border-radius: 50%;
+            opacity: 0.25;
+        }
+        &::after {
+            content: "1";
+            position: absolute;
+            top: 20%;
+            left: -65px;
+            font-size: 3.75em;
+            color: $pallete-decor-text;
+            opacity: 0.4;
+        }
+        &-2 {
+            &::after {
+                content: "2";
+            }
+        }
+        &-3 {
+            &::after {
+                content: "3";
+            }
+        }
+        &-title {
+            font-size: 1.5em;
+            letter-spacing: .04em;
+            font-weight: 500;
+            margin: 23px 0 0px;
+        }
+        &-text {
+            letter-spacing: 0.04em;
+        }
+    }
+    &__image {
+        align-items: center;
+        margin: 20px auto 0 0;
+    }
+    @include respond-to("large-s") {
+        &__list {
+            width: 95%;
+            margin: 0 auto;
+        }
+        &__image {
+            margin: 20px auto 0;
+        }
+    }
+    @include respond-to("medium-xs") {
+        &__item {
+            &::before {
+                top: 18px;
+                left: -90px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    @include respond-to("mobile-l") {
+        &__item {
+            &::before {
+                top: 28px;
+                left: -80px;
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+    @include respond-to("mobile-") {
+        &__item {
+            &::before {
+                top: 45px;
+                left: -75px;
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+}

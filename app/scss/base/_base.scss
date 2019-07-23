@@ -1,0 +1,74 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    font-family: $font-cera-regular;
+    font-size: $font-size;
+    background: $pallete-background-primary;
+    color: $pallete-body-text;
+}
+
+h1,
+h2 {
+    font-size: $font-size--title;
+    font-weight: 500;
+    @include respond-to("large-s") {
+        font-size: 2em;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $pallete-button-text;
+    background-color: transparent;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3.750em;
+    border-radius: 1.875em;
+}
+
+.button-link,
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.750em;
+    border-radius: 1.875em;
+    transition: all 0.3s ease;
+}

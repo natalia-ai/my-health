@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Cera Round Pro";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Cera Round Pro Regular"), local("CeraRoundPro-Regular");
+    src: url("../fonts/cera-round/CeraRoundPro-Regular.otf") format("otf");
+  }
+  
+  @font-face {
+    font-family: "Cera Round Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Cera Round Pro Thin"), local("CeraRoundPro-Thin");
+    src: url("../fonts/cera-round/CeraRoundPro-Thin.otf") format("otf");
+  }
+
+  @font-face {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Geometria Medium"), local("Geometria-Medium");
+    src: url("../fonts/geometria/Geometria-Medium.ttf") format("ttf");
+    src: url("../fonts/geometria/Geometria-Medium.woff") format("woff");
+  } 

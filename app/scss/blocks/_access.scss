@@ -1,0 +1,75 @@
+.access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0 0 160px;
+    &::before {
+        content: "";
+        @include absolute-content;
+        height: 138.5%;
+        background-image: linear-gradient(to bottom, #0e72b7 0%, #282b64 100%);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.1;
+        @include respond-to("medium-s") {
+            height: 128%;
+        }
+    }
+    &__title {
+        width: 98%;
+        margin: 145px auto 45px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    &__text {
+        width: 98%;
+        max-width: 600px;
+        margin: 0 auto 55px;
+        text-align: center;
+        font-size: $font-size--subtitle;
+        line-height: 1.5em;
+        letter-spacing: 0.035em;
+    }
+    &__form {
+        display: flex;
+        justify-content: center;
+        width: 98%;
+        margin: 0 auto;
+        z-index: 10;
+        @include respond-to("medium-s") {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+    &__input {
+        width: 360px;
+        height: 60px;
+        margin: 0 20px 0 0;
+        padding: 0 0 0 20px;
+        font-size: $font-size--text-small;
+        color: $pallete-input-text;
+        border: 1px solid $pallete-input-border;
+        background-color: transparent;
+        @include respond-to("medium-s") {
+            margin: 0 auto 20px;
+        }
+        @include respond-to("mobile-l") {
+            width: 300px;
+        }
+    }
+    &__button {
+        width: 159px;
+        margin: 0 0 0 20px;
+        color: $pallete-menu-text;
+        background-color: $pallete-accent;
+        @include button-hover;
+        @include respond-to("medium-s") {
+            margin: 0 auto;
+        }
+    }
+}
